@@ -1,0 +1,13 @@
+J:\Proyecto Integrador 1\Gmaps\Gmaps\bin\Debug\Gmaps.exe.config
+J:\Proyecto Integrador 1\Gmaps\Gmaps\bin\Debug\Gmaps.exe
+J:\Proyecto Integrador 1\Gmaps\Gmaps\bin\Debug\Gmaps.pdb
+J:\Proyecto Integrador 1\Gmaps\Gmaps\bin\Debug\GMap.NET.Core.dll
+J:\Proyecto Integrador 1\Gmaps\Gmaps\bin\Debug\GMap.NET.WindowsForms.dll
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.csprojAssemblyReference.cache
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.Mapa.resources
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.Properties.Resources.resources
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.csproj.GenerateResource.cache
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.csproj.CoreCompileInputs.cache
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.csproj.CopyComplete
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.exe
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.pdb
