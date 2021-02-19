@@ -11,3 +11,4 @@ J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.csproj.CoreCompileInputs.ca
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.csproj.CopyComplete
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.exe
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.pdb
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.ui.Data.resources

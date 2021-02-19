@@ -37,11 +37,14 @@ namespace Gmaps
             this.puntosBt = new System.Windows.Forms.Button();
             this.poligonosBt = new System.Windows.Forms.Button();
             this.mostrarBt = new System.Windows.Forms.Button();
+            this.comboBox = new System.Windows.Forms.ComboBox();
+            this.tableBt = new System.Windows.Forms.Button();
+            this.filtrarLb = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // longitudTxt
             // 
-            this.longitudTxt.Location = new System.Drawing.Point(136, 418);
+            this.longitudTxt.Location = new System.Drawing.Point(118, 418);
             this.longitudTxt.Name = "longitudTxt";
             this.longitudTxt.Size = new System.Drawing.Size(100, 20);
             this.longitudTxt.TabIndex = 1;
@@ -56,20 +59,20 @@ namespace Gmaps
             // latitudLb
             // 
             this.latitudLb.AutoSize = true;
-            this.latitudLb.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.latitudLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.latitudLb.Location = new System.Drawing.Point(27, 398);
             this.latitudLb.Name = "latitudLb";
-            this.latitudLb.Size = new System.Drawing.Size(62, 17);
+            this.latitudLb.Size = new System.Drawing.Size(51, 18);
             this.latitudLb.TabIndex = 3;
             this.latitudLb.Text = "Latitud";
             // 
             // longitudLb
             // 
             this.longitudLb.AutoSize = true;
-            this.longitudLb.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.longitudLb.Location = new System.Drawing.Point(153, 398);
+            this.longitudLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.longitudLb.Location = new System.Drawing.Point(137, 398);
             this.longitudLb.Name = "longitudLb";
-            this.longitudLb.Size = new System.Drawing.Size(73, 17);
+            this.longitudLb.Size = new System.Drawing.Size(64, 18);
             this.longitudLb.TabIndex = 4;
             this.longitudLb.Text = "Longitud";
             // 
@@ -103,36 +106,70 @@ namespace Gmaps
             // 
             // puntosBt
             // 
-            this.puntosBt.Location = new System.Drawing.Point(516, 415);
+            this.puntosBt.Location = new System.Drawing.Point(516, 418);
             this.puntosBt.Name = "puntosBt";
             this.puntosBt.Size = new System.Drawing.Size(75, 23);
             this.puntosBt.TabIndex = 6;
             this.puntosBt.Text = "Marcadores";
             this.puntosBt.UseVisualStyleBackColor = true;
+            this.puntosBt.Click += new System.EventHandler(this.puntosBt_Click);
             // 
             // poligonosBt
             // 
-            this.poligonosBt.Location = new System.Drawing.Point(597, 415);
+            this.poligonosBt.Location = new System.Drawing.Point(516, 444);
             this.poligonosBt.Name = "poligonosBt";
             this.poligonosBt.Size = new System.Drawing.Size(75, 23);
             this.poligonosBt.TabIndex = 7;
             this.poligonosBt.Text = "Poligonos";
             this.poligonosBt.UseVisualStyleBackColor = true;
+            this.poligonosBt.Click += new System.EventHandler(this.poligonosBt_Click);
             // 
             // mostrarBt
             // 
-            this.mostrarBt.Location = new System.Drawing.Point(260, 416);
+            this.mostrarBt.Location = new System.Drawing.Point(398, 416);
             this.mostrarBt.Name = "mostrarBt";
             this.mostrarBt.Size = new System.Drawing.Size(75, 23);
             this.mostrarBt.TabIndex = 8;
             this.mostrarBt.Text = "Mostrar";
             this.mostrarBt.UseVisualStyleBackColor = true;
+            this.mostrarBt.Click += new System.EventHandler(this.mostrarBt_Click);
+            // 
+            // comboBox
+            // 
+            this.comboBox.FormattingEnabled = true;
+            this.comboBox.Location = new System.Drawing.Point(271, 417);
+            this.comboBox.Name = "comboBox";
+            this.comboBox.Size = new System.Drawing.Size(121, 21);
+            this.comboBox.TabIndex = 9;
+            // 
+            // tableBt
+            // 
+            this.tableBt.Location = new System.Drawing.Point(597, 428);
+            this.tableBt.Name = "tableBt";
+            this.tableBt.Size = new System.Drawing.Size(75, 23);
+            this.tableBt.TabIndex = 10;
+            this.tableBt.Text = "Abrir Tabla";
+            this.tableBt.UseVisualStyleBackColor = true;
+            this.tableBt.Click += new System.EventHandler(this.tableBt_Click);
+            // 
+            // filtrarLb
+            // 
+            this.filtrarLb.AutoSize = true;
+            this.filtrarLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filtrarLb.Location = new System.Drawing.Point(527, 398);
+            this.filtrarLb.Name = "filtrarLb";
+            this.filtrarLb.Size = new System.Drawing.Size(49, 18);
+            this.filtrarLb.TabIndex = 11;
+            this.filtrarLb.Text = "Filtros";
             // 
             // Mapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 450);
+            this.ClientSize = new System.Drawing.Size(684, 474);
+            this.Controls.Add(this.filtrarLb);
+            this.Controls.Add(this.tableBt);
+            this.Controls.Add(this.comboBox);
             this.Controls.Add(this.mostrarBt);
             this.Controls.Add(this.poligonosBt);
             this.Controls.Add(this.puntosBt);
@@ -142,7 +179,7 @@ namespace Gmaps
             this.Controls.Add(this.latitudTxt);
             this.Controls.Add(this.longitudTxt);
             this.Name = "Mapa";
-            this.Text = "Form1";
+            this.Text = "Map";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +194,9 @@ namespace Gmaps
         private System.Windows.Forms.Button puntosBt;
         private System.Windows.Forms.Button poligonosBt;
         private System.Windows.Forms.Button mostrarBt;
+        private System.Windows.Forms.ComboBox comboBox;
+        private System.Windows.Forms.Button tableBt;
+        private System.Windows.Forms.Label filtrarLb;
     }
 }
 

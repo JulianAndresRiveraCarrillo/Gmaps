@@ -6,11 +6,14 @@ using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
+using Gmaps.ui;
 
 namespace Gmaps
 {
     public partial class Mapa : Form
     {
+        Data data = new Data();
+
         private List<PointLatLng> puntos;
         private List<PointLatLng> poligonos;
 
@@ -22,8 +25,6 @@ namespace Gmaps
             InitializeComponent();
             puntos = new List<PointLatLng>();
             poligonos = new List<PointLatLng>();
-            comboBox.Items.Add("Puntos");
-            comboBox.Items.Add("Poligonos");
         }
 
         private void gmap_Load(object sender, EventArgs e)
@@ -36,6 +37,27 @@ namespace Gmaps
 
             gmap.Overlays.Add(points);
             gmap.Overlays.Add(polygons);
+        }
+
+        private void mostrarBt_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("se mostrara un punto");
+        }
+
+        private void puntosBt_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Solo se muestra los puntos");
+        }
+
+        private void poligonosBt_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("solo se muestran los poligonos");
+        }
+
+        private void tableBt_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            data.Show();
         }
     }
 }
