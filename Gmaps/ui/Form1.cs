@@ -24,13 +24,13 @@ namespace Gmaps
             poligonos = new List<PointLatLng>();
         }
 
-        private void gMapControl1_Load(object sender, EventArgs e)
+        private void gmap_Load(object sender, EventArgs e)
         {
             gmap.MapProvider = GoogleMapProvider.Instance;
 
             GMaps.Instance.Mode = AccessMode.ServerOnly;
 
-            gmap.Position = new PointLatLng(4.570868, -74.297333);
+            gmap.Position = new PointLatLng(3.42158, -76.5205);
 
             gmap.Overlays.Add(points);
             gmap.Overlays.Add(polygons);

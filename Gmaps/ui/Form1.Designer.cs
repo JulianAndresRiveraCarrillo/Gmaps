@@ -29,39 +29,12 @@ namespace Gmaps
         /// </summary>
         private void InitializeComponent()
         {
-            this.gmap = new GMap.NET.WindowsForms.GMapControl();
             this.longitudTxt = new System.Windows.Forms.TextBox();
             this.latitudTxt = new System.Windows.Forms.TextBox();
             this.latitudLb = new System.Windows.Forms.Label();
             this.longitudLb = new System.Windows.Forms.Label();
+            this.gmap = new GMap.NET.WindowsForms.GMapControl();
             this.SuspendLayout();
-            // 
-            // gmap
-            // 
-            this.gmap.Bearing = 0F;
-            this.gmap.CanDragMap = true;
-            this.gmap.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gmap.GrayScaleMode = false;
-            this.gmap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gmap.LevelsKeepInMemmory = 5;
-            this.gmap.Location = new System.Drawing.Point(12, 12);
-            this.gmap.MarkersEnabled = true;
-            this.gmap.MaxZoom = 20;
-            this.gmap.MinZoom = 2;
-            this.gmap.MouseWheelZoomEnabled = true;
-            this.gmap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.gmap.Name = "gmap";
-            this.gmap.NegativeMode = false;
-            this.gmap.PolygonsEnabled = true;
-            this.gmap.RetryLoadTile = 0;
-            this.gmap.RoutesEnabled = true;
-            this.gmap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gmap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gmap.ShowTileGridLines = false;
-            this.gmap.Size = new System.Drawing.Size(660, 374);
-            this.gmap.TabIndex = 0;
-            this.gmap.Zoom = 13D;
-            this.gmap.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
             // longitudTxt
             // 
@@ -97,16 +70,44 @@ namespace Gmaps
             this.longitudLb.TabIndex = 4;
             this.longitudLb.Text = "Longitud";
             // 
+            // gmap
+            // 
+            this.gmap.AutoSize = true;
+            this.gmap.Bearing = 0F;
+            this.gmap.CanDragMap = true;
+            this.gmap.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gmap.GrayScaleMode = false;
+            this.gmap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gmap.LevelsKeepInMemmory = 5;
+            this.gmap.Location = new System.Drawing.Point(12, 12);
+            this.gmap.MarkersEnabled = true;
+            this.gmap.MaxZoom = 20;
+            this.gmap.MinZoom = 2;
+            this.gmap.MouseWheelZoomEnabled = true;
+            this.gmap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gmap.Name = "gmap";
+            this.gmap.NegativeMode = false;
+            this.gmap.PolygonsEnabled = true;
+            this.gmap.RetryLoadTile = 0;
+            this.gmap.RoutesEnabled = true;
+            this.gmap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gmap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gmap.ShowTileGridLines = false;
+            this.gmap.Size = new System.Drawing.Size(660, 383);
+            this.gmap.TabIndex = 5;
+            this.gmap.Zoom = 13D;
+            this.gmap.Load += new System.EventHandler(this.gmap_Load);
+            // 
             // Mapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 450);
+            this.Controls.Add(this.gmap);
             this.Controls.Add(this.longitudLb);
             this.Controls.Add(this.latitudLb);
             this.Controls.Add(this.latitudTxt);
             this.Controls.Add(this.longitudTxt);
-            this.Controls.Add(this.gmap);
             this.Name = "Mapa";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -115,12 +116,11 @@ namespace Gmaps
         }
 
         #endregion
-
-        private GMap.NET.WindowsForms.GMapControl gmap;
         private System.Windows.Forms.TextBox longitudTxt;
         private System.Windows.Forms.TextBox latitudTxt;
         private System.Windows.Forms.Label latitudLb;
         private System.Windows.Forms.Label longitudLb;
+        private GMap.NET.WindowsForms.GMapControl gmap;
     }
 }
 
