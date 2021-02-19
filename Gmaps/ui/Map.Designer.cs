@@ -34,11 +34,14 @@ namespace Gmaps
             this.latitudLb = new System.Windows.Forms.Label();
             this.longitudLb = new System.Windows.Forms.Label();
             this.gmap = new GMap.NET.WindowsForms.GMapControl();
+            this.puntosBt = new System.Windows.Forms.Button();
+            this.poligonosBt = new System.Windows.Forms.Button();
+            this.mostrarBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // longitudTxt
             // 
-            this.longitudTxt.Location = new System.Drawing.Point(150, 418);
+            this.longitudTxt.Location = new System.Drawing.Point(136, 418);
             this.longitudTxt.Name = "longitudTxt";
             this.longitudTxt.Size = new System.Drawing.Size(100, 20);
             this.longitudTxt.TabIndex = 1;
@@ -64,7 +67,7 @@ namespace Gmaps
             // 
             this.longitudLb.AutoSize = true;
             this.longitudLb.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.longitudLb.Location = new System.Drawing.Point(163, 398);
+            this.longitudLb.Location = new System.Drawing.Point(153, 398);
             this.longitudLb.Name = "longitudLb";
             this.longitudLb.Size = new System.Drawing.Size(73, 17);
             this.longitudLb.TabIndex = 4;
@@ -98,11 +101,41 @@ namespace Gmaps
             this.gmap.Zoom = 13D;
             this.gmap.Load += new System.EventHandler(this.gmap_Load);
             // 
+            // puntosBt
+            // 
+            this.puntosBt.Location = new System.Drawing.Point(516, 415);
+            this.puntosBt.Name = "puntosBt";
+            this.puntosBt.Size = new System.Drawing.Size(75, 23);
+            this.puntosBt.TabIndex = 6;
+            this.puntosBt.Text = "Marcadores";
+            this.puntosBt.UseVisualStyleBackColor = true;
+            // 
+            // poligonosBt
+            // 
+            this.poligonosBt.Location = new System.Drawing.Point(597, 415);
+            this.poligonosBt.Name = "poligonosBt";
+            this.poligonosBt.Size = new System.Drawing.Size(75, 23);
+            this.poligonosBt.TabIndex = 7;
+            this.poligonosBt.Text = "Poligonos";
+            this.poligonosBt.UseVisualStyleBackColor = true;
+            // 
+            // mostrarBt
+            // 
+            this.mostrarBt.Location = new System.Drawing.Point(260, 416);
+            this.mostrarBt.Name = "mostrarBt";
+            this.mostrarBt.Size = new System.Drawing.Size(75, 23);
+            this.mostrarBt.TabIndex = 8;
+            this.mostrarBt.Text = "Mostrar";
+            this.mostrarBt.UseVisualStyleBackColor = true;
+            // 
             // Mapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 450);
+            this.Controls.Add(this.mostrarBt);
+            this.Controls.Add(this.poligonosBt);
+            this.Controls.Add(this.puntosBt);
             this.Controls.Add(this.gmap);
             this.Controls.Add(this.longitudLb);
             this.Controls.Add(this.latitudLb);
@@ -121,6 +154,9 @@ namespace Gmaps
         private System.Windows.Forms.Label latitudLb;
         private System.Windows.Forms.Label longitudLb;
         private GMap.NET.WindowsForms.GMapControl gmap;
+        private System.Windows.Forms.Button puntosBt;
+        private System.Windows.Forms.Button poligonosBt;
+        private System.Windows.Forms.Button mostrarBt;
     }
 }
 

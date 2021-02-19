@@ -22,6 +22,8 @@ namespace Gmaps
             InitializeComponent();
             puntos = new List<PointLatLng>();
             poligonos = new List<PointLatLng>();
+            comboBox.Items.Add("Puntos");
+            comboBox.Items.Add("Poligonos");
         }
 
         private void gmap_Load(object sender, EventArgs e)
