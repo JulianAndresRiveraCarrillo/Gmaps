@@ -10,17 +10,15 @@ using Gmaps.ui;
 
 namespace Gmaps
 {
-    public partial class Mapa : Form
+    public partial class MapWindow : Form
     {
-        Data data = new Data();
-
         private List<PointLatLng> puntos;
         private List<PointLatLng> poligonos;
 
         GMapOverlay points = new GMapOverlay("Puntos");
         GMapOverlay polygons = new GMapOverlay("Poligonos");
 
-        public Mapa()
+        public MapWindow()
         {
             InitializeComponent();
             puntos = new List<PointLatLng>();
@@ -57,7 +55,8 @@ namespace Gmaps
         private void tableBt_Click(object sender, EventArgs e)
         {
             this.Hide();
-            data.Show();
+            DataWindow dw = new DataWindow();
+            dw.Show();
         }
     }
 }

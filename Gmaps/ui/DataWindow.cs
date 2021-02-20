@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Gmaps.ui
 {
-    public partial class Data : Form
+    public partial class DataWindow : Form
     {
-        public Data()
+        public DataWindow()
         {
             InitializeComponent();
+            categoriaBox.Visible = false;
+            cadenaBox.Visible = false;
+            Rango1.Visible = false;
+            Rango2.Visible = false;
+            minBox.Visible = false;
+            maxBox.Visible = false;
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -27,11 +33,16 @@ namespace Gmaps.ui
             MessageBox.Show("se generara un grafico");
         }
 
-        public void Data_Load(object sender, EventArgs e)
+        private void cargarBt_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
 
-            this.ShowDialog();
+        }
+
+        private void mapBt_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MapWindow mw = new MapWindow();
+            mw.Show();
         }
     }
 }

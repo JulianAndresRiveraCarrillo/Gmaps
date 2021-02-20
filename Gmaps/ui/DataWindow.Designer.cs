@@ -1,7 +1,7 @@
 ﻿
 namespace Gmaps.ui
 {
-    partial class Data
+    partial class DataWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,21 @@ namespace Gmaps.ui
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Data));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataWindow));
             this.label1 = new System.Windows.Forms.Label();
             this.filtroBox = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cargarBt1 = new System.Windows.Forms.Button();
+            this.cargarBt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.categoriaBox = new System.Windows.Forms.ComboBox();
             this.cadenaBox = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.minBox = new System.Windows.Forms.TextBox();
+            this.maxBox = new System.Windows.Forms.TextBox();
             this.Rango2 = new System.Windows.Forms.Label();
             this.Rango1 = new System.Windows.Forms.Label();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.mapBt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,11 +64,12 @@ namespace Gmaps.ui
             resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             // 
-            // cargarBt1
+            // cargarBt
             // 
-            resources.ApplyResources(this.cargarBt1, "cargarBt1");
-            this.cargarBt1.Name = "cargarBt1";
-            this.cargarBt1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.cargarBt, "cargarBt");
+            this.cargarBt.Name = "cargarBt";
+            this.cargarBt.UseVisualStyleBackColor = true;
+            this.cargarBt.Click += new System.EventHandler(this.cargarBt_Click);
             // 
             // button1
             // 
@@ -92,15 +95,15 @@ namespace Gmaps.ui
             resources.ApplyResources(this.cadenaBox, "cadenaBox");
             this.cadenaBox.Name = "cadenaBox";
             // 
-            // textBox3
+            // minBox
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
+            resources.ApplyResources(this.minBox, "minBox");
+            this.minBox.Name = "minBox";
             // 
-            // textBox2
+            // maxBox
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.maxBox, "maxBox");
+            this.maxBox.Name = "maxBox";
             // 
             // Rango2
             // 
@@ -112,25 +115,35 @@ namespace Gmaps.ui
             resources.ApplyResources(this.Rango1, "Rango1");
             this.Rango1.Name = "Rango1";
             // 
-            // Data
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // mapBt
+            // 
+            resources.ApplyResources(this.mapBt, "mapBt");
+            this.mapBt.Name = "mapBt";
+            this.mapBt.UseVisualStyleBackColor = true;
+            this.mapBt.Click += new System.EventHandler(this.mapBt_Click);
+            // 
+            // DataWindow
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.mapBt);
             this.Controls.Add(this.Rango1);
             this.Controls.Add(this.Rango2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.maxBox);
+            this.Controls.Add(this.minBox);
             this.Controls.Add(this.cadenaBox);
             this.Controls.Add(this.categoriaBox);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.cargarBt1);
+            this.Controls.Add(this.cargarBt);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.filtroBox);
             this.Controls.Add(this.label1);
-            this.Name = "Data";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-            this.Load += new System.EventHandler(this.Data_Load);
+            this.Name = "DataWindow";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -142,14 +155,16 @@ namespace Gmaps.ui
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox filtroBox;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button cargarBt1;
+        private System.Windows.Forms.Button cargarBt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox categoriaBox;
         private System.Windows.Forms.TextBox cadenaBox;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox minBox;
+        private System.Windows.Forms.TextBox maxBox;
         private System.Windows.Forms.Label Rango2;
         private System.Windows.Forms.Label Rango1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Button mapBt;
     }
 }

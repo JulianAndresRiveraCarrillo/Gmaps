@@ -147,7 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="filtroBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>64, 12</value>
@@ -168,7 +168,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;filtroBox.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 49</value>
@@ -189,34 +189,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
-  <data name="cargarBt1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cargarBt.Location" type="System.Drawing.Point, System.Drawing">
     <value>677, 10</value>
   </data>
-  <data name="cargarBt1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cargarBt.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 23</value>
   </data>
-  <data name="cargarBt1.TabIndex" type="System.Int32, mscorlib">
+  <data name="cargarBt.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="cargarBt1.Text" xml:space="preserve">
+  <data name="cargarBt.Text" xml:space="preserve">
     <value>Cargar Informacion</value>
   </data>
-  <data name="&gt;&gt;cargarBt1.Name" xml:space="preserve">
-    <value>cargarBt1</value>
+  <data name="&gt;&gt;cargarBt.Name" xml:space="preserve">
+    <value>cargarBt</value>
   </data>
-  <data name="&gt;&gt;cargarBt1.Type" xml:space="preserve">
+  <data name="&gt;&gt;cargarBt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cargarBt1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cargarBt.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;cargarBt1.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;cargarBt.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 416</value>
+    <value>253, 414</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -237,10 +237,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 416</value>
+    <value>334, 416</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>187, 21</value>
@@ -258,7 +258,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="categoriaBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 12</value>
@@ -282,7 +282,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;categoriaBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="cadenaBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>421, 13</value>
@@ -306,49 +306,49 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cadenaBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="minBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>568, 23</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="minBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="minBox.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;minBox.Name" xml:space="preserve">
+    <value>minBox</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;minBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;minBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;minBox.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="maxBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>613, 23</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="maxBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="maxBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="&gt;&gt;maxBox.Name" xml:space="preserve">
+    <value>maxBox</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;maxBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;maxBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;maxBox.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="Rango2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -375,7 +375,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Rango2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Rango1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -402,6 +402,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Rango1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="mapBt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 416</value>
+  </data>
+  <data name="mapBt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="mapBt.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="mapBt.Text" xml:space="preserve">
+    <value>Abrir Mapa</value>
+  </data>
+  <data name="&gt;&gt;mapBt.Name" xml:space="preserve">
+    <value>mapBt</value>
+  </data>
+  <data name="&gt;&gt;mapBt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mapBt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mapBt.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -419,11 +446,21 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 449</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Data</value>
   </data>
+  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
+    <value>openFileDialog</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Data</value>
+    <value>DataWindow</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -1,7 +1,7 @@
 ﻿
 namespace Gmaps
 {
-    partial class Mapa
+    partial class MapWindow
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -162,7 +162,7 @@ namespace Gmaps
             this.filtrarLb.TabIndex = 11;
             this.filtrarLb.Text = "Filtros";
             // 
-            // Mapa
+            // MapWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,7 +178,8 @@ namespace Gmaps
             this.Controls.Add(this.latitudLb);
             this.Controls.Add(this.latitudTxt);
             this.Controls.Add(this.longitudTxt);
-            this.Name = "Mapa";
+            this.Name = "MapWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Map";
             this.ResumeLayout(false);
             this.PerformLayout();
