@@ -17,16 +17,17 @@ namespace Gmaps.ui
 
         DataManager dataManager = new DataManager();
 
-        public DataWindow(string p)
+        public DataWindow()
         {
             InitializeComponent();
+            
             categoriaBox.Visible = false;
             cadenaBox.Visible = false;
             Rango1.Visible = false;
             Rango2.Visible = false;
             minBox.Visible = false;
             maxBox.Visible = false;
-            _path = p;
+            Ok.Visible = false;
         }
 
         private void cargarBt_Click(object sender, EventArgs e)
@@ -51,6 +52,28 @@ namespace Gmaps.ui
         private void graficoBt_Click(object sender, EventArgs e)
         {
             MessageBox.Show(_path);
+        }
+
+        private void filtrar_Click(object sender, EventArgs e)
+        {
+            if (filtroBox.SelectedItem.Equals("Categorico"))
+            {
+                categoriaBox.Visible = true;
+                Ok.Visible = true;
+                cadenaBox.Visible = false;
+                Rango1.Visible = false;
+                Rango2.Visible = false;
+                minBox.Visible = false;
+                maxBox.Visible = false;
+            }
+        }
+
+        private void Ok_Click(object sender, EventArgs e)
+        {
+            if(categoriaBox.Visible == true)
+            {
+                dataManager.filterByType(_path, categoriaBox.Text);
+            }
         }
     }
 }

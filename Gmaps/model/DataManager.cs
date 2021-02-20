@@ -73,7 +73,8 @@ namespace Gmaps.model
 
                     if (data.Length > 0)
                     {
-                        if (data[4].Equals(filter))
+                       // Console.WriteLine(data[8].ToString().Replace("\"","").Trim());
+                        if (data[8].ToString().Replace("\"", "").Trim().Equals(filter))
                         {
                             DataRow row = table.NewRow();
                             for (int j = 0; j < data.Length; j++)

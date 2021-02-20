@@ -44,6 +44,8 @@ namespace Gmaps.ui
             this.Rango1 = new System.Windows.Forms.Label();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.mapBt = new System.Windows.Forms.Button();
+            this.filtrar = new System.Windows.Forms.Button();
+            this.Ok = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +57,10 @@ namespace Gmaps.ui
             // filtroBox
             // 
             this.filtroBox.FormattingEnabled = true;
+            this.filtroBox.Items.AddRange(new object[] {
+            resources.GetString("filtroBox.Items"),
+            resources.GetString("filtroBox.Items1"),
+            resources.GetString("filtroBox.Items2")});
             resources.ApplyResources(this.filtroBox, "filtroBox");
             this.filtroBox.Name = "filtroBox";
             // 
@@ -87,6 +93,10 @@ namespace Gmaps.ui
             // categoriaBox
             // 
             this.categoriaBox.FormattingEnabled = true;
+            this.categoriaBox.Items.AddRange(new object[] {
+            resources.GetString("categoriaBox.Items"),
+            resources.GetString("categoriaBox.Items1"),
+            resources.GetString("categoriaBox.Items2")});
             resources.ApplyResources(this.categoriaBox, "categoriaBox");
             this.categoriaBox.Name = "categoriaBox";
             // 
@@ -126,10 +136,26 @@ namespace Gmaps.ui
             this.mapBt.UseVisualStyleBackColor = true;
             this.mapBt.Click += new System.EventHandler(this.mapBt_Click);
             // 
+            // filtrar
+            // 
+            resources.ApplyResources(this.filtrar, "filtrar");
+            this.filtrar.Name = "filtrar";
+            this.filtrar.UseVisualStyleBackColor = true;
+            this.filtrar.Click += new System.EventHandler(this.filtrar_Click);
+            // 
+            // Ok
+            // 
+            resources.ApplyResources(this.Ok, "Ok");
+            this.Ok.Name = "Ok";
+            this.Ok.UseVisualStyleBackColor = true;
+            this.Ok.Click += new System.EventHandler(this.Ok_Click);
+            // 
             // DataWindow
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Ok);
+            this.Controls.Add(this.filtrar);
             this.Controls.Add(this.mapBt);
             this.Controls.Add(this.Rango1);
             this.Controls.Add(this.Rango2);
@@ -167,5 +193,7 @@ namespace Gmaps.ui
         private System.Windows.Forms.Label Rango1;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.Button mapBt;
+        private System.Windows.Forms.Button filtrar;
+        private System.Windows.Forms.Button Ok;
     }
 }

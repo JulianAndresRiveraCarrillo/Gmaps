@@ -58,7 +58,7 @@ namespace Gmaps
         private void tableBt_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DataWindow dw = new DataWindow(_path);
+            DataWindow dw = new DataWindow();
             dw.Show();
         }
     }
