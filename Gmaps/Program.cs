@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gmaps.ui;
 
 namespace Gmaps
 {
@@ -16,7 +17,7 @@ namespace Gmaps
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MapWindow());
+            Application.Run(new DataWindow());
         }
     }
 }

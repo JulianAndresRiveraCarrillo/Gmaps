@@ -34,7 +34,7 @@ namespace Gmaps.ui
             this.filtroBox = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cargarBt = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.graficoBt = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.categoriaBox = new System.Windows.Forms.ComboBox();
             this.cadenaBox = new System.Windows.Forms.TextBox();
@@ -71,12 +71,12 @@ namespace Gmaps.ui
             this.cargarBt.UseVisualStyleBackColor = true;
             this.cargarBt.Click += new System.EventHandler(this.cargarBt_Click);
             // 
-            // button1
+            // graficoBt
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.graficoBt, "graficoBt");
+            this.graficoBt.Name = "graficoBt";
+            this.graficoBt.UseVisualStyleBackColor = true;
+            this.graficoBt.Click += new System.EventHandler(this.graficoBt_Click);
             // 
             // comboBox1
             // 
@@ -138,7 +138,7 @@ namespace Gmaps.ui
             this.Controls.Add(this.cadenaBox);
             this.Controls.Add(this.categoriaBox);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.graficoBt);
             this.Controls.Add(this.cargarBt);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.filtroBox);
@@ -156,7 +156,7 @@ namespace Gmaps.ui
         private System.Windows.Forms.ComboBox filtroBox;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button cargarBt;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button graficoBt;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox categoriaBox;
         private System.Windows.Forms.TextBox cadenaBox;

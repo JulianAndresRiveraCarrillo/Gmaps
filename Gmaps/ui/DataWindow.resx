@@ -215,28 +215,28 @@
   <data name="&gt;&gt;cargarBt.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="graficoBt.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 414</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="graficoBt.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="graficoBt.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="graficoBt.Text" xml:space="preserve">
     <value>Graficar</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;graficoBt.Name" xml:space="preserve">
+    <value>graficoBt</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;graficoBt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;graficoBt.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;graficoBt.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">

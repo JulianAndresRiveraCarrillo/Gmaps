@@ -12,17 +12,20 @@ namespace Gmaps
 {
     public partial class MapWindow : Form
     {
+        private string _path = " ";
+
         private List<PointLatLng> puntos;
         private List<PointLatLng> poligonos;
 
         GMapOverlay points = new GMapOverlay("Puntos");
         GMapOverlay polygons = new GMapOverlay("Poligonos");
 
-        public MapWindow()
+        public MapWindow(string p)
         {
             InitializeComponent();
             puntos = new List<PointLatLng>();
             poligonos = new List<PointLatLng>();
+            _path = p;
         }
 
         private void gmap_Load(object sender, EventArgs e)
@@ -39,7 +42,7 @@ namespace Gmaps
 
         private void mostrarBt_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("se mostrara un punto");
+            MessageBox.Show(_path);
         }
 
         private void puntosBt_Click(object sender, EventArgs e)
@@ -55,7 +58,7 @@ namespace Gmaps
         private void tableBt_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DataWindow dw = new DataWindow();
+            DataWindow dw = new DataWindow(_path);
             dw.Show();
         }
     }

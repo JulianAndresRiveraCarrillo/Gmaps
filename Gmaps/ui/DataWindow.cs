@@ -12,7 +12,9 @@ namespace Gmaps.ui
 {
     public partial class DataWindow : Form
     {
-        public DataWindow()
+        private string _path = " ";
+
+        public DataWindow(string p)
         {
             InitializeComponent();
             categoriaBox.Visible = false;
@@ -21,28 +23,26 @@ namespace Gmaps.ui
             Rango2.Visible = false;
             minBox.Visible = false;
             maxBox.Visible = false;
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            MessageBox.Show("se cargara la informacion");
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("se generara un grafico");
+            _path = prop;
         }
 
         private void cargarBt_Click(object sender, EventArgs e)
         {
-
+            openFileDialog.ShowDialog();
+            _path = openFileDialog.FileName;
+            MessageBox.Show(_path);
         }
 
         private void mapBt_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MapWindow mw = new MapWindow();
+            MapWindow mw = new MapWindow(_path);
             mw.Show();
+        }
+
+        private void graficoBt_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(_path);
         }
     }
 }
