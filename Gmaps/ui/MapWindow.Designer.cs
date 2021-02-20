@@ -99,7 +99,7 @@ namespace Gmaps
             this.gmap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gmap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gmap.ShowTileGridLines = false;
-            this.gmap.Size = new System.Drawing.Size(660, 383);
+            this.gmap.Size = new System.Drawing.Size(776, 383);
             this.gmap.TabIndex = 5;
             this.gmap.Zoom = 13D;
             this.gmap.Load += new System.EventHandler(this.gmap_Load);
@@ -116,7 +116,7 @@ namespace Gmaps
             // 
             // poligonosBt
             // 
-            this.poligonosBt.Location = new System.Drawing.Point(516, 444);
+            this.poligonosBt.Location = new System.Drawing.Point(597, 417);
             this.poligonosBt.Name = "poligonosBt";
             this.poligonosBt.Size = new System.Drawing.Size(75, 23);
             this.poligonosBt.TabIndex = 7;
@@ -144,7 +144,7 @@ namespace Gmaps
             // 
             // tableBt
             // 
-            this.tableBt.Location = new System.Drawing.Point(597, 428);
+            this.tableBt.Location = new System.Drawing.Point(713, 414);
             this.tableBt.Name = "tableBt";
             this.tableBt.Size = new System.Drawing.Size(75, 23);
             this.tableBt.TabIndex = 10;
@@ -156,7 +156,7 @@ namespace Gmaps
             // 
             this.filtrarLb.AutoSize = true;
             this.filtrarLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filtrarLb.Location = new System.Drawing.Point(527, 398);
+            this.filtrarLb.Location = new System.Drawing.Point(569, 397);
             this.filtrarLb.Name = "filtrarLb";
             this.filtrarLb.Size = new System.Drawing.Size(49, 18);
             this.filtrarLb.TabIndex = 11;
@@ -166,7 +166,7 @@ namespace Gmaps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 474);
+            this.ClientSize = new System.Drawing.Size(800, 449);
             this.Controls.Add(this.filtrarLb);
             this.Controls.Add(this.tableBt);
             this.Controls.Add(this.comboBox);

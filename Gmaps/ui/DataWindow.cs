@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gmaps.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,8 @@ namespace Gmaps.ui
     {
         private string _path = " ";
 
+        DataManager dataManager = new DataManager();
+
         public DataWindow(string p)
         {
             InitializeComponent();
@@ -23,14 +26,19 @@ namespace Gmaps.ui
             Rango2.Visible = false;
             minBox.Visible = false;
             maxBox.Visible = false;
-            _path = prop;
+            _path = p;
         }
 
         private void cargarBt_Click(object sender, EventArgs e)
         {
             openFileDialog.ShowDialog();
             _path = openFileDialog.FileName;
-            MessageBox.Show(_path);
+            dataManager.createTable(_path);
+
+            if(dataManager.Table != null)
+            {
+                dataGridView1.DataSource = dataManager.Table;
+            }
         }
 
         private void mapBt_Click(object sender, EventArgs e)

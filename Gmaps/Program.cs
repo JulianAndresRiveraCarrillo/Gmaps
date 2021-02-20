@@ -17,7 +17,7 @@ namespace Gmaps
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataWindow());
+            Application.Run(new DataWindow(null));
         }
     }
 }

@@ -143,6 +143,7 @@ namespace Gmaps.ui
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.filtroBox);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "DataWindow";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
