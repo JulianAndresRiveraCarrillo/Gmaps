@@ -95,5 +95,47 @@ namespace Gmaps.model
                 }
             }
         }
+
+        public void filterByRank(string path, long min, long max)
+        {
+            table.Clear();
+
+            string[] text = System.IO.File.ReadAllLines(path);
+
+            if (text.Length > 1)
+            {
+
+                for (int i = 1; i < text.Length; i++)
+                {
+
+                    string[] data = Regex.Split(text[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+
+                    if (data.Length > 0)
+                    {
+                        string temp = data[9].ToString().Replace("\"", "").Trim();
+                        long aux = 0;
+                        long.TryParse(temp, out aux);
+
+                        if (aux > min && aux < max)
+                        {
+                            DataRow row = table.NewRow();
+                            for (int j = 0; j < data.Length; j++)
+                            {
+                                try
+                                {
+                                    row[j] = data[j];
+                                }
+                                catch (Exception)
+                                {
+                                    Console.WriteLine("ERROR!");
+                                }
+                            }
+
+                            table.Rows.Add(row);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

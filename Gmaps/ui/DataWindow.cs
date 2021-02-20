@@ -28,6 +28,7 @@ namespace Gmaps.ui
             minBox.Visible = false;
             maxBox.Visible = false;
             Ok.Visible = false;
+            filtrar.Enabled = false;
         }
 
         private void cargarBt_Click(object sender, EventArgs e)
@@ -40,6 +41,8 @@ namespace Gmaps.ui
             {
                 dataGridView1.DataSource = dataManager.Table;
             }
+
+            filtrar.Enabled = true;
         }
 
         private void mapBt_Click(object sender, EventArgs e)
@@ -66,6 +69,16 @@ namespace Gmaps.ui
                 minBox.Visible = false;
                 maxBox.Visible = false;
             }
+            if (filtroBox.SelectedItem.Equals("Numerico"))
+            {
+                categoriaBox.Visible = false;
+                Ok.Visible = true;
+                cadenaBox.Visible = false;
+                Rango1.Visible = true;
+                Rango2.Visible = true;
+                minBox.Visible = true;
+                maxBox.Visible = true;
+            }
         }
 
         private void Ok_Click(object sender, EventArgs e)
@@ -73,6 +86,10 @@ namespace Gmaps.ui
             if(categoriaBox.Visible == true)
             {
                 dataManager.filterByType(_path, categoriaBox.Text);
+            }else if(Rango1.Visible == true)
+            {
+                dataManager.filterByRange(_path, long.Parse(minBox.Text), long.Parse(maxBox.Text));
+               
             }
         }
     }
