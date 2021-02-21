@@ -1,6 +1,6 @@
 Developers
 
-Gustavo Adolfo Villada Molina
+Gustavo Adolfo Villada Molina -
 Julian Andres Rivera Carrillo
 
 # Software en C# Usando GMaps
