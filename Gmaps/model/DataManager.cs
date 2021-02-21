@@ -50,7 +50,7 @@ namespace Gmaps.model
 
                             row[j] = data[j].ToString().Replace("\""," ").Trim();
                         }
-                        catch (Exception e)
+                        catch (Exception)
                         {
                             Console.WriteLine("WARNING");
                         }
@@ -159,7 +159,9 @@ namespace Gmaps.model
                     if (data.Length > 0)
                     {
                         string temp = data[4].ToString().Replace("\"", " ").Trim();
+#pragma warning disable CS0642 // Posible instrucción vacía errónea
                         if (temp.Equals(filter));
+#pragma warning restore CS0642 // Posible instrucción vacía errónea
                         {
                             DataRow row = table.NewRow();
                             for (int j = 0; j < data.Length; j++)

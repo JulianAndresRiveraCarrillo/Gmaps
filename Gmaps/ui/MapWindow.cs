@@ -7,6 +7,7 @@ using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
 using Gmaps.ui;
+using System.IO;
 
 namespace Gmaps
 {
@@ -19,7 +20,7 @@ namespace Gmaps
         private List<PointLatLng> puntos;
         private List<PointLatLng> poligonos;
 
-        GMapOverlay points = new GMapOverlay("Puntos");
+        GMapOverlay markers = new GMapOverlay("Marcadores");
         GMapOverlay polygons = new GMapOverlay("Poligonos");
 
         public MapWindow(string p)
@@ -29,15 +30,15 @@ namespace Gmaps
             poligonos = new List<PointLatLng>();
             _path = p;
 
-            lista= new List<string>();
+            lista = new List<string>();
             readInfo();
         }
 
-        
+
         private void readInfo()
         {
 
-            var reader = new StreamReader(File.OpenRead(PATH));
+            var reader = new StreamReader(File.OpenRead(_path));
             int count = 0;
             while (!reader.EndOfStream && count < 100)
             {
@@ -55,7 +56,7 @@ namespace Gmaps
         {
 
             return lista;
-        
+
         }
 
         private void gmap_Load(object sender, EventArgs e)
@@ -66,13 +67,13 @@ namespace Gmaps
 
             gmap.Position = new PointLatLng(3.42158, -76.5205);
 
-            gmap.Overlays.Add(points);
+            gmap.Overlays.Add(markers);
             gmap.Overlays.Add(polygons);
         }
 
-                private void setMarkers()   //Coloca los marcadores en la capa
+        private void setMarkers()   //Coloca los marcadores en la capa
         {
-            foreach(PointLatLng p in puntos) //P es un punto creado con latitud y longitud
+            foreach (PointLatLng p in puntos) //P es un punto creado con latitud y longitud
             {
                 GMapMarker marker = new GMarkerGoogle(p, GMarkerGoogleType.red_dot);
                 markers.Markers.Add(marker); //Aqui se agrega el marcador a la capa
@@ -90,21 +91,14 @@ namespace Gmaps
             polygons.Polygons.Add(polygon);
         }
 
-        private void setRoutes() //Extrapolar la explicación de los marcadores aqui...
-        {
-            GMapRoute route = new GMapRoute(rutas, "Route");
-            route.Stroke = new Pen(Color.Red, 3);
-            Console.WriteLine(route.Distance); //Metodo que retorna la distancia comprendida en la ruta (KM)
-            routes.Routes.Add(route);
-        }
 
         private void municipios_Click(object sender, EventArgs e)   //Mostrar municipios de Colombia
         {
-            List<string> lista = dm.getLista(); //Trae los nombres de los municipios desde el Model
+            List<string> lista = this.lista; //Trae los nombres de los municipios desde el Model
 
             foreach (string f in lista)
             {
-                GeoCoderStatusCode statusCode;  
+                GeoCoderStatusCode statusCode;
                 PointLatLng? pointLatLng1 = OpenStreet4UMapProvider.Instance.GetPoint(f, out statusCode);
 
                 //Las anteriores dos lineas proveen las funcionalidades para hacer la georeferenciación inversa
@@ -114,7 +108,7 @@ namespace Gmaps
                     GMapMarker marker00 = new GMarkerGoogle(new PointLatLng(pointLatLng1.Value.Lat, pointLatLng1.Value.Lng), GMarkerGoogleType.blue_dot);
                     marker00.ToolTipText = f + "\n" + pointLatLng1.Value.Lat + "\n" + pointLatLng1.Value.Lng; // Esta linea es solo apariencia
                     markers.Markers.Add(marker00);
-                    
+
                 }
 
             }
@@ -126,16 +120,15 @@ namespace Gmaps
             puntos.Clear();
             markers.Clear();
             polygons.Clear();
-            routes.Clear();
         }
 
         private void Add_Click(object sender, EventArgs e) //Añade PointsLatLng a la lista especificada en el comboBox
         {
 
-            double lat = double.Parse(lat_textBox.Text); //Si te pc esta en español, usa comas con los decimales
-            lat_textBox.Text = "";
-            double lon = double.Parse(lon_textBox.Text);
-            lon_textBox.Text = "";
+            double lat = double.Parse(latitudTxt.Text); //Si te pc esta en español, usa comas con los decimales
+            latitudTxt.Text = "";
+            double lon = double.Parse(longitudTxt.Text);
+            longitudTxt.Text = "";
 
             PointLatLng p = new PointLatLng(lat, lon);
 
@@ -143,8 +136,7 @@ namespace Gmaps
                 puntos.Add(p);
             else if (comboBox.Text == "Polygon")
                 poligonos.Add(p);
-            else
-                rutas.Add(p);
+
         }
 
         private void Show_click(object sender, EventArgs e) //Mostrar contenido de capas
@@ -155,17 +147,13 @@ namespace Gmaps
                 puntos.Clear();
             }
             else if (comboBox.Text == "Polygon")
-            { 
+            {
                 setPolygons();
                 poligonos.Clear();
             }
 
-            else 
-            {
-                setRoutes();
-                rutas.Clear();
-            }
-               
+
+
         }
 
         private void mostrarBt_Click(object sender, EventArgs e)

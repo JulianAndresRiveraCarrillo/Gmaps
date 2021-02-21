@@ -49,7 +49,7 @@ namespace Gmaps.ui
 
         private void mapBt_Click(object sender, EventArgs e)
         {
-            if(_path.equals("")){
+            if(_path.Equals(" ")){
             MessageBox.Show("Lo sentimos, ingresa el csv");
             return;
             }
@@ -356,6 +356,11 @@ namespace Gmaps.ui
         private void Ok2_Click(object sender, EventArgs e)
         {
             dataManager.filterByWord(_path, cadenaBox.Text);
+        }
+
+        private void DataWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

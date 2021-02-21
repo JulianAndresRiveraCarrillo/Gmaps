@@ -25,3 +25,4 @@ C:\Users\icesi\Source\Repos\Gmaps2\Gmaps\obj\Debug\Gmaps.csproj.GenerateResource
 C:\Users\icesi\Source\Repos\Gmaps2\Gmaps\obj\Debug\Gmaps.csproj.CopyComplete
 C:\Users\icesi\Source\Repos\Gmaps2\Gmaps\obj\Debug\Gmaps.exe
 C:\Users\icesi\Source\Repos\Gmaps2\Gmaps\obj\Debug\Gmaps.pdb
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.ui.BarGraphic.resources
