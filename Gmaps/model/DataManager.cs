@@ -158,7 +158,8 @@ namespace Gmaps.model
 
                     if (data.Length > 0)
                     {
-                        if (data[4].ToString().Replace("\"", " ").Trim().Equals(filter));
+                        string temp = data[4].ToString().Replace("\"", " ").Trim();
+                        if (temp.Equals(filter));
                         {
                             DataRow row = table.NewRow();
                             for (int j = 0; j < data.Length; j++)

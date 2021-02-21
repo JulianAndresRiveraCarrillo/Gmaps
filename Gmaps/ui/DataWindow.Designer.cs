@@ -35,7 +35,7 @@ namespace Gmaps.ui
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cargarBt = new System.Windows.Forms.Button();
             this.graficoBt = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.graficoBox = new System.Windows.Forms.ComboBox();
             this.categoriaBox = new System.Windows.Forms.ComboBox();
             this.cadenaBox = new System.Windows.Forms.TextBox();
             this.minBox = new System.Windows.Forms.TextBox();
@@ -85,11 +85,15 @@ namespace Gmaps.ui
             this.graficoBt.UseVisualStyleBackColor = true;
             this.graficoBt.Click += new System.EventHandler(this.graficoBt_Click);
             // 
-            // comboBox1
+            // graficoBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
+            this.graficoBox.FormattingEnabled = true;
+            this.graficoBox.Items.AddRange(new object[] {
+            resources.GetString("graficoBox.Items"),
+            resources.GetString("graficoBox.Items1"),
+            resources.GetString("graficoBox.Items2")});
+            resources.ApplyResources(this.graficoBox, "graficoBox");
+            this.graficoBox.Name = "graficoBox";
             // 
             // categoriaBox
             // 
@@ -175,7 +179,7 @@ namespace Gmaps.ui
             this.Controls.Add(this.minBox);
             this.Controls.Add(this.cadenaBox);
             this.Controls.Add(this.categoriaBox);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.graficoBox);
             this.Controls.Add(this.graficoBt);
             this.Controls.Add(this.cargarBt);
             this.Controls.Add(this.dataGridView1);
@@ -196,7 +200,7 @@ namespace Gmaps.ui
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button cargarBt;
         private System.Windows.Forms.Button graficoBt;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox graficoBox;
         private System.Windows.Forms.ComboBox categoriaBox;
         private System.Windows.Forms.TextBox cadenaBox;
         private System.Windows.Forms.TextBox minBox;

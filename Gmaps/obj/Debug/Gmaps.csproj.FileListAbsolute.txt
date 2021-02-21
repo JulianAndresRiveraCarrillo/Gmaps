@@ -12,3 +12,4 @@ J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.exe
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.pdb
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.MapWindow.resources
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.ui.DataWindow.resources
+J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.ui.BarGraphic.resources

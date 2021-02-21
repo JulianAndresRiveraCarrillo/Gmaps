@@ -56,7 +56,11 @@ namespace Gmaps.ui
 
         private void graficoBt_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(_path);
+            if(graficoBox.Text == "Grafico de Barras")
+            {
+                BarGraphic bg = new BarGraphic(_path);
+                bg.Show();
+            }
         }
 
         private void filtrar_Click(object sender, EventArgs e)
