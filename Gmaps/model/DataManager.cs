@@ -19,42 +19,48 @@ namespace Gmaps.model
 
         public void createTable(string filePath)
         {
+
             table = new DataTable();
 
-            string[] text = System.IO.File.ReadAllLines(filePath);
+            string[] lines = System.IO.File.ReadAllLines(filePath);
 
-            if (text.Length > 0)
+            if (lines.Length > 0)
             {
-                string first = text[0].ToString().Replace("\""," ").Trim();
+                string first = lines[0].ToString().Replace("\"", " ").Trim();
 
-                string[] lines = Regex.Split(first, ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+                string[] text = Regex.Split(first, ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
-                foreach (string header in lines)
+                foreach (string header in text)
                 {
                     table.Columns.Add(new DataColumn(header));
                 }
 
-                for (int i = 1; i < text.Length; i++)
+                for (int i = 1; i < lines.Length; i++)
                 {
-                    string[] data = Regex.Split(text[i].ToString().Replace("\"", " ").Trim(), ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+
+
+                    string[] data = Regex.Split(lines[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
                     DataRow row = table.NewRow();
 
-                    for (int j = 0; j < 11; j++)
+                    for (int j = 0; j < data.Length; j++)
                     {
                         try
                         {
-                            row[j] = data[j];
+
+                            row[j] = data[j].ToString().Replace("\""," ").Trim();
                         }
-                        catch(Exception)
+                        catch (Exception e)
                         {
-                            Console.WriteLine("ERROR!");
+                            Console.WriteLine("WARNING");
                         }
                     }
 
                     table.Rows.Add(row);
                 }
+
             }
+
         }
 
         public void filterByType(string path, string filter)//Se filtra en el atributo capital: primary, admin, minor.
