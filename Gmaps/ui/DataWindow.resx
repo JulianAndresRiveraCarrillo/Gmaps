@@ -147,7 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="filtroBox.Items" xml:space="preserve">
     <value>Categorico</value>
@@ -177,7 +177,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;filtroBox.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 57</value>
@@ -198,7 +198,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="cargarBt.Location" type="System.Drawing.Point, System.Drawing">
     <value>677, 10</value>
@@ -222,7 +222,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cargarBt.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="graficoBt.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 414</value>
@@ -246,7 +246,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;graficoBt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>334, 416</value>
@@ -267,7 +267,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="categoriaBox.Items" xml:space="preserve">
     <value>primary</value>
@@ -300,7 +300,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;categoriaBox.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="cadenaBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>546, 1</value>
@@ -310,9 +310,6 @@
   </data>
   <data name="cadenaBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="cadenaBox.Text" xml:space="preserve">
-    <value>Escribir...</value>
   </data>
   <data name="&gt;&gt;cadenaBox.Name" xml:space="preserve">
     <value>cadenaBox</value>
@@ -324,7 +321,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cadenaBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="minBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>400, 31</value>
@@ -345,7 +342,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;minBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="maxBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>488, 31</value>
@@ -366,7 +363,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;maxBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="Rango2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -393,7 +390,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Rango2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="Rango1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -423,7 +420,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Rango1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -450,7 +447,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mapBt.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="filtrar.Location" type="System.Drawing.Point, System.Drawing">
     <value>235, 10</value>
@@ -474,7 +471,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;filtrar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Ok.Location" type="System.Drawing.Point, System.Drawing">
     <value>321, 28</value>
@@ -498,6 +495,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Ok.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Ok2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 24</value>
+  </data>
+  <data name="Ok2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
+  </data>
+  <data name="Ok2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="Ok2.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;Ok2.Name" xml:space="preserve">
+    <value>Ok2</value>
+  </data>
+  <data name="&gt;&gt;Ok2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Ok2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ok2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

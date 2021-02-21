@@ -46,6 +46,7 @@ namespace Gmaps.ui
             this.mapBt = new System.Windows.Forms.Button();
             this.filtrar = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
+            this.Ok2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,8 +103,11 @@ namespace Gmaps.ui
             // 
             // cadenaBox
             // 
+            this.cadenaBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cadenaBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             resources.ApplyResources(this.cadenaBox, "cadenaBox");
             this.cadenaBox.Name = "cadenaBox";
+            this.cadenaBox.TextChanged += new System.EventHandler(this.cadenaBox_TextChanged);
             // 
             // minBox
             // 
@@ -150,10 +154,18 @@ namespace Gmaps.ui
             this.Ok.UseVisualStyleBackColor = true;
             this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
+            // Ok2
+            // 
+            resources.ApplyResources(this.Ok2, "Ok2");
+            this.Ok2.Name = "Ok2";
+            this.Ok2.UseVisualStyleBackColor = true;
+            this.Ok2.Click += new System.EventHandler(this.Ok2_Click);
+            // 
             // DataWindow
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Ok2);
             this.Controls.Add(this.Ok);
             this.Controls.Add(this.filtrar);
             this.Controls.Add(this.mapBt);
@@ -195,5 +207,6 @@ namespace Gmaps.ui
         private System.Windows.Forms.Button mapBt;
         private System.Windows.Forms.Button filtrar;
         private System.Windows.Forms.Button Ok;
+        private System.Windows.Forms.Button Ok2;
     }
 }
