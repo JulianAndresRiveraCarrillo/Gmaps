@@ -11,17 +11,17 @@ This is a C # program using Google Maps
 
 At the beginning of the program we will be able to see a screen, with an excell type table, in which on the upper right side we will find a button to import the data from a CSV file, after importing this data the table will be filled with the corresponding information.
 
-![Initial Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Documentation/Captura1.PNG)
+![Initial Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/Captura1.PNG)
 
 
 After having imported the data, we will have the possibility of filtering this data, using categorical, numerical or alphabetical filters, below we will see an example using a numerical filter.
 
-![Initial Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Documentation/Captura2.PNG)
+![Initial Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/Captura2.PNG)
 
 
 Another option that we will have is to place a marker on a map using latitude and longitude coordinates, thanks to Google Maps.
 
-![Map Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Documentation/Captura3.PNG)
+![Map Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/Captura3.PNG)
 
 
 
