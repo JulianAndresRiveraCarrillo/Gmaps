@@ -49,6 +49,11 @@ namespace Gmaps.ui
 
         private void mapBt_Click(object sender, EventArgs e)
         {
+            if(_path.equals("")){
+            MessageBox.Show("Lo sentimos, ingresa el csv");
+            return;
+            }
+
             this.Hide();
             MapWindow mw = new MapWindow(_path);
             mw.Show();
