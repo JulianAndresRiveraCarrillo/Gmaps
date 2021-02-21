@@ -25,7 +25,6 @@ namespace Gmaps.model
         {
 
             string[] lines = System.IO.File.ReadAllLines(path);
-
             if (lines.Length > 0)
             {
 

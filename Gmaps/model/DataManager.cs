@@ -11,16 +11,18 @@ namespace Gmaps.model
 {
     class DataManager
     {
-        private DataTable table;
+        private DataTable table = new DataTable();
+
+
         public DataTable Table
         {
             get => table;
+            
         }
 
         public void createTable(string filePath)
         {
-
-            table = new DataTable();
+            
 
             string[] lines = System.IO.File.ReadAllLines(filePath);
 
@@ -99,6 +101,7 @@ namespace Gmaps.model
                     }
                 }
             }
+
         }
 
         public void filterByRank(string path, long min, long max)//se filtra en el atributo population.
@@ -182,5 +185,7 @@ namespace Gmaps.model
                 }
             }
         }
+
+       
     }
 }

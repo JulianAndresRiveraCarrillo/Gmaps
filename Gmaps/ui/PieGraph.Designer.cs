@@ -1,7 +1,7 @@
 ﻿
 namespace Gmaps.ui
 {
-    partial class BarGraphic
+    partial class PieGraph
     {
         /// <summary>
         /// Required designer variable.
@@ -32,44 +32,43 @@ namespace Gmaps.ui
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.barChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.barChart)).BeginInit();
+            this.pieChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.pieChart)).BeginInit();
             this.SuspendLayout();
             // 
-            // barChart
+            // pieChart
             // 
             chartArea1.Name = "ChartArea1";
-            this.barChart.ChartAreas.Add(chartArea1);
-            this.barChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pieChart.ChartAreas.Add(chartArea1);
+            this.pieChart.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Name = "Legend1";
-            this.barChart.Legends.Add(legend1);
-            this.barChart.Location = new System.Drawing.Point(0, 0);
-            this.barChart.Name = "barChart";
+            this.pieChart.Legends.Add(legend1);
+            this.pieChart.Location = new System.Drawing.Point(0, 0);
+            this.pieChart.Name = "pieChart";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.Legend = "Legend1";
-            series1.Name = "Poblacion";
-            this.barChart.Series.Add(series1);
-            this.barChart.Size = new System.Drawing.Size(800, 450);
-            this.barChart.TabIndex = 0;
-            this.barChart.Text = "chart1";
+            series1.Name = "Series1";
+            this.pieChart.Series.Add(series1);
+            this.pieChart.Size = new System.Drawing.Size(800, 450);
+            this.pieChart.TabIndex = 0;
+            this.pieChart.Text = "chart1";
             // 
-            // BarGraphic
+            // PieGraph
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.barChart);
-            this.Name = "BarGraphic";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BarGraphic";
-            ((System.ComponentModel.ISupportInitialize)(this.barChart)).EndInit();
+            this.Controls.Add(this.pieChart);
+            this.Name = "PieGraph";
+            this.Text = "PieGraph";
+            ((System.ComponentModel.ISupportInitialize)(this.pieChart)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart barChart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart pieChart;
     }
 }

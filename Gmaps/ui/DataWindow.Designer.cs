@@ -187,7 +187,6 @@ namespace Gmaps.ui
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "DataWindow";
-            this.Load += new System.EventHandler(this.DataWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

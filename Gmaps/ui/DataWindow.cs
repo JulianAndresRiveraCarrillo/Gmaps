@@ -31,6 +31,7 @@ namespace Gmaps.ui
             Ok.Visible = false;
             Ok2.Visible = false;
             filtrar.Enabled = false;
+            graficoBt.Enabled = false;
         }
 
         private void cargarBt_Click(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace Gmaps.ui
             }
 
             filtrar.Enabled = true;
+            graficoBt.Enabled = true;
         }
 
         private void mapBt_Click(object sender, EventArgs e)
@@ -61,11 +63,19 @@ namespace Gmaps.ui
 
         private void graficoBt_Click(object sender, EventArgs e)
         {
-            if(graficoBox.Text == "Grafico de Barras")
+            if (graficoBox.Text == "Grafico de Barras" )
             {
                 BarGraphic bg = new BarGraphic(_path);
                 bg.Show();
+
             }
+            if (graficoBox.Text == "Grafico de Pastel")
+            {
+                PieGraph pg = new PieGraph(_path);
+                pg.Show();
+
+            }
+
         }
 
         private void filtrar_Click(object sender, EventArgs e)
@@ -356,11 +366,6 @@ namespace Gmaps.ui
         private void Ok2_Click(object sender, EventArgs e)
         {
             dataManager.filterByWord(_path, cadenaBox.Text);
-        }
-
-        private void DataWindow_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

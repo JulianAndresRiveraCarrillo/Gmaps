@@ -252,7 +252,7 @@
     <value>Grafico de Barras</value>
   </data>
   <data name="graficoBox.Items1" xml:space="preserve">
-    <value>Grafico de Torta </value>
+    <value>Grafico de Pastel</value>
   </data>
   <data name="graficoBox.Items2" xml:space="preserve">
     <value>Grafico de Puntos</value>
