@@ -75,6 +75,12 @@ namespace Gmaps.ui
                 pg.Show();
 
             }
+            if (graficoBox.Text == "Grafico de Puntos")
+            {
+                PointsGraph pgh = new PointsGraph(_path);
+                pgh.Show();
+
+            }
 
         }
 

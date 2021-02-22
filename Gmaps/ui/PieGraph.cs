@@ -13,13 +13,15 @@ namespace Gmaps.ui
 {
     public partial class PieGraph : Form
     {
-        GraphManager gm = new GraphManager();
+        private GraphManager gm = new GraphManager();
 
         public PieGraph(string path)
         {
             InitializeComponent();
             gm.GenerateGraph(path);
             PieGraph_Load();
+
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void PieGraph_Load()

@@ -7,35 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
 using Gmaps.model;
+
 namespace Gmaps.ui
 {
-    public partial class BarGraphic : Form
+    public partial class PointsGraph : Form
     {
         private GraphManager gm = new GraphManager();
 
-        public BarGraphic(string path)
+        public PointsGraph(string path)
         {
             InitializeComponent();
             gm.GenerateGraph(path);
-            BarGraphic_Load();
+            Points_Load();
 
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void BarGraphic_Load()
+        private void Points_Load()
         {
             List<City> infoList = gm.Info;
-            barChart.ChartAreas["ChartArea1"].AxisX.Interval = 1;
+            pointsChart.ChartAreas["ChartArea1"].AxisX.Interval = 1;
 
             for (int i = 0; i < infoList.Count; i++)
             {
-                barChart.Series["Poblacion"].Points.AddXY(infoList[i].Name, infoList[i].Population);
+                pointsChart.Series["Poblacion"].Points.AddXY(infoList[i].Name, infoList[i].Population);
             }
-            
         }
-
-       
     }
 }

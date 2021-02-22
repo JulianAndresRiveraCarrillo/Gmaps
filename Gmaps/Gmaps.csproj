@@ -82,6 +82,12 @@
     <Compile Include="ui\PieGraph.Designer.cs">
       <DependentUpon>PieGraph.cs</DependentUpon>
     </Compile>
+    <Compile Include="ui\PointsGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\PointsGraph.Designer.cs">
+      <DependentUpon>PointsGraph.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ui\BarGraphic.resx">
       <DependentUpon>BarGraphic.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ui\PieGraph.resx">
       <DependentUpon>PieGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\PointsGraph.resx">
+      <DependentUpon>PointsGraph.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
