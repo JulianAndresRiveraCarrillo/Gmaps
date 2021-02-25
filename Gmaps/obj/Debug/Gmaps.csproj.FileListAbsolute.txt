@@ -28,3 +28,19 @@ C:\Users\icesi\Source\Repos\Gmaps2\Gmaps\obj\Debug\Gmaps.pdb
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.ui.BarGraphic.resources
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.ui.PieGraph.resources
 J:\Proyecto Integrador 1\Gmaps\Gmaps\obj\Debug\Gmaps.ui.PointsGraph.resources
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\bin\Debug\Gmaps.exe.config
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\bin\Debug\Gmaps.exe
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\bin\Debug\Gmaps.pdb
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\bin\Debug\GMap.NET.Core.dll
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.csprojAssemblyReference.cache
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.ui.BarGraphic.resources
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.MapWindow.resources
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.Properties.Resources.resources
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.ui.DataWindow.resources
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.ui.PieGraph.resources
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.ui.PointsGraph.resources
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.csproj.GenerateResource.cache
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.csproj.CopyComplete
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.exe
+C:\Users\icesi\Source\Repos\Gmaps4\Gmaps\obj\Debug\Gmaps.pdb

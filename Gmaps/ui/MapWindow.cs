@@ -16,6 +16,7 @@ namespace Gmaps
         private string _path = " ";
 
         private List<string> lista;
+        private List<string> listaPais;
 
         private List<PointLatLng> puntos;
         private List<PointLatLng> poligonos;
@@ -40,13 +41,13 @@ namespace Gmaps
 
             var reader = new StreamReader(File.OpenRead(_path));
             int count = 0;
-            while (!reader.EndOfStream && count < 100)
+            while (!reader.EndOfStream && count < 200)
             {
 
                 var line = reader.ReadLine();
                 var arreglo = line.Split(',');
 
-                lista.Add(arreglo[4] + ", Colombia"); //Se concatena el nombre del municipio con la cadena ", Colombia"
+                lista.Add(arreglo[4]); //Se concatena el nombre del municipio con la cadena ", Colombia"
                 count++;                              //Para más precisión pueden concatenar el departamento.  
             }
 
@@ -94,64 +95,24 @@ namespace Gmaps
 
         private void municipios_Click(object sender, EventArgs e)   //Mostrar municipios de Colombia
         {
-            List<string> lista = this.lista; //Trae los nombres de los municipios desde el Model
 
-            foreach (string f in lista)
-            {
-                GeoCoderStatusCode statusCode;
-                PointLatLng? pointLatLng1 = OpenStreet4UMapProvider.Instance.GetPoint(f, out statusCode);
-
-                //Las anteriores dos lineas proveen las funcionalidades para hacer la georeferenciación inversa
-
-                if (pointLatLng1 != null)
-                {
-                    GMapMarker marker00 = new GMarkerGoogle(new PointLatLng(pointLatLng1.Value.Lat, pointLatLng1.Value.Lng), GMarkerGoogleType.blue_dot);
-                    marker00.ToolTipText = f + "\n" + pointLatLng1.Value.Lat + "\n" + pointLatLng1.Value.Lng; // Esta linea es solo apariencia
-                    markers.Markers.Add(marker00);
-
-                }
-
-            }
         }
 
 
         private void deletePoints_click(object sender, EventArgs e) //Limpia todas las capas
         {
-            puntos.Clear();
-            markers.Clear();
-            polygons.Clear();
+
         }
 
         private void Add_Click(object sender, EventArgs e) //Añade PointsLatLng a la lista especificada en el comboBox
         {
 
-            double lat = double.Parse(latitudTxt.Text); //Si te pc esta en español, usa comas con los decimales
-            latitudTxt.Text = "";
-            double lon = double.Parse(longitudTxt.Text);
-            longitudTxt.Text = "";
 
-            PointLatLng p = new PointLatLng(lat, lon);
-
-            if (comboBox.Text == "Marker")
-                puntos.Add(p);
-            else if (comboBox.Text == "Polygon")
-                poligonos.Add(p);
 
         }
 
         private void Show_click(object sender, EventArgs e) //Mostrar contenido de capas
         {
-            if (comboBox.Text == "Marker")
-            {
-                setMarkers();
-                puntos.Clear();
-            }
-            else if (comboBox.Text == "Polygon")
-            {
-                setPolygons();
-                poligonos.Clear();
-            }
-
 
 
         }
@@ -176,6 +137,94 @@ namespace Gmaps
             this.Hide();
             DataWindow dw = new DataWindow();
             dw.Show();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            double lat = double.Parse(latitudTxt.Text); //Si te pc esta en español, usa comas con los decimales
+            latitudTxt.Text = "";
+            double lon = double.Parse(longitudTxt.Text);
+            longitudTxt.Text = "";
+
+            PointLatLng p = new PointLatLng(lat, lon);
+
+            if (comboBox.Text == "Marcador")
+                puntos.Add(p);
+            else if (comboBox.Text == "Poligono")
+                poligonos.Add(p);
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            if (comboBox.Text == "Marcador")
+            {
+                setMarkers();
+                puntos.Clear();
+            }
+            else if (comboBox.Text == "Poligono")
+            {
+                setPolygons();
+                poligonos.Clear();
+            }
+
+
+        }
+
+        private void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            List<string> lista = this.lista; //Trae los nombres de los municipios desde el Model
+
+            List<string> nuevaLista = new List<string>();
+
+            if (comboBoxFiltro.SelectedItem!=null)
+            {
+                for (int i = 0; i < lista.Count; i++)
+                {
+                    Console.WriteLine(lista[i] + " = " + comboBoxFiltro.SelectedItem.ToString()+"Es afuera");
+                    string comilla = "\"";
+                    if (lista[i].Equals(comilla+comboBoxFiltro.SelectedItem.ToString()+comilla))
+                    {
+                        Console.WriteLine(lista[i]+" = "+ comboBoxFiltro.SelectedItem.ToString());
+
+                        nuevaLista.Add(lista[i]);
+
+                        
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ingresa un país para filtrar");
+            }
+
+            foreach (string f in nuevaLista)
+            {
+                GeoCoderStatusCode statusCode;
+                PointLatLng? pointLatLng1 = OpenStreet4UMapProvider.Instance.GetPoint(f, out statusCode);
+
+                //Las anteriores dos lineas proveen las funcionalidades para hacer la georeferenciación inversa
+
+                if (pointLatLng1 != null)
+                {
+                    GMapMarker marker00 = new GMarkerGoogle(new PointLatLng(pointLatLng1.Value.Lat, pointLatLng1.Value.Lng), GMarkerGoogleType.blue_dot);
+                    marker00.ToolTipText = f + "\n" + pointLatLng1.Value.Lat + "\n" + pointLatLng1.Value.Lng; // Esta linea es solo apariencia
+                    markers.Markers.Add(marker00);
+
+                }
+
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiarMapa_Click(object sender, EventArgs e)
+        {
+            puntos.Clear();
+            markers.Clear();
+            polygons.Clear();
         }
     }
 }
