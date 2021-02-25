@@ -18,10 +18,16 @@ After having imported the data, we will have the possibility of filtering this d
 
 ![Initial Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/Captura2.PNG)
 
+You can also make graphics with the imported data.
+
+![Initial Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/IMAGEN3.PNG)
+
 
 Another option that we will have is to place a marker on a map using latitude and longitude coordinates, thanks to Google Maps.
 
-![Map Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/Captura3.PNG)
+![Map Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/IMAGEN4.PNG)
+![Map Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/IMAGEN5.PNG)
+
 
 
 
