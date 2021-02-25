@@ -20,7 +20,7 @@ After having imported the data, we will have the possibility of filtering this d
 
 You can also make graphics with the imported data.
 
-![Initial Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/IMAGEN3.PNG)
+![Initial Screen](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/IMAGEN3.png)
 
 
 Another option that we will have is to place a marker on a map using latitude and longitude coordinates, thanks to Google Maps.
