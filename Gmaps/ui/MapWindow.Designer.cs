@@ -164,7 +164,7 @@ namespace Gmaps
             this.btnMostrarTodos.Name = "btnMostrarTodos";
             this.btnMostrarTodos.Size = new System.Drawing.Size(104, 48);
             this.btnMostrarTodos.TabIndex = 14;
-            this.btnMostrarTodos.Text = "Mostrar Todos";
+            this.btnMostrarTodos.Text = "Mostrar país";
             this.btnMostrarTodos.UseVisualStyleBackColor = true;
             this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
             // 

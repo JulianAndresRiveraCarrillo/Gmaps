@@ -194,7 +194,7 @@ namespace Gmaps
             }
             else
             {
-                MessageBox.Show("Ingresa un país para filtrar");
+                MessageBox.Show("Ingresa un país para mostrar");
             }
 
             foreach (string f in nuevaLista)
