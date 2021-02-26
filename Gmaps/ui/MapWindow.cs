@@ -92,23 +92,8 @@ namespace Gmaps
             polygons.Polygons.Add(polygon);
         }
 
-        private void deletePoints_click(object sender, EventArgs e) //Limpia todas las capas
-        {
-
-        }
-
-        private void Add_Click(object sender, EventArgs e) //Añade PointsLatLng a la lista especificada en el comboBox
-        {
 
 
-
-        }
-
-        private void Show_click(object sender, EventArgs e) //Mostrar contenido de capas
-        {
-
-
-        }
 
         private void mostrarBt_Click(object sender, EventArgs e)
         {
@@ -165,7 +150,7 @@ namespace Gmaps
 
         private void btnMostrarTodos_Click(object sender, EventArgs e)
         {
-            List<string> lista = this.lista; //Trae los nombres de los Paises desde el Model
+            List<string> lista = this.lista; //Trae los nombres de los municipios desde el Model
 
             List<string> nuevaLista = new List<string>();
 
@@ -208,6 +193,10 @@ namespace Gmaps
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void btnLimpiarMapa_Click(object sender, EventArgs e)
         {
