@@ -52,5 +52,5 @@ After having analyzed the problem, a solution could be designed and I get the mo
 # SOFTWARE WORKING
 
 **Video demonstration of software functionality **
-[![Watch the video](link de la miniatura del video)](link del video en youtube)
+[![Watch the video](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Gmaps/data/miniaturavideo.png)](https://www.youtube.com/watch?v=IWLIgkcZSAE&feature=youtu.be)
 
