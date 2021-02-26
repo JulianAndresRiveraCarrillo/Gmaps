@@ -111,12 +111,13 @@ namespace Gmaps.ui
             if (filtroBox.SelectedItem.Equals("Cadena"))
             {
                 categoriaBox.Visible = false;
-                Ok.Visible = true;
+                Ok.Visible = false;
                 cadenaBox.Visible = true;
                 Rango1.Visible = false;
                 Rango2.Visible = false;
                 minBox.Visible = false;
                 maxBox.Visible = false;
+                Ok2.Visible = true;
             }
         }
 
