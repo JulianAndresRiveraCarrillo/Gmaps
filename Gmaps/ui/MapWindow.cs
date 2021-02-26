@@ -93,29 +93,7 @@ namespace Gmaps
         }
 
 
-        private void municipios_Click(object sender, EventArgs e)   //Mostrar municipios de Colombia
-        {
 
-        }
-
-
-        private void deletePoints_click(object sender, EventArgs e) //Limpia todas las capas
-        {
-
-        }
-
-        private void Add_Click(object sender, EventArgs e) //Añade PointsLatLng a la lista especificada en el comboBox
-        {
-
-
-
-        }
-
-        private void Show_click(object sender, EventArgs e) //Mostrar contenido de capas
-        {
-
-
-        }
 
         private void mostrarBt_Click(object sender, EventArgs e)
         {
