@@ -88,7 +88,7 @@ namespace Gmaps.model
                             {
                                 try
                                 {
-                                    row[j] = data[j];
+                                    row[j] = data[j].ToString().Replace("\"", " ").Trim();
                                 }
                                 catch (Exception)
                                 {
@@ -131,7 +131,7 @@ namespace Gmaps.model
                             {
                                 try
                                 {
-                                    row[j] = data[j];
+                                    row[j] = data[j].ToString().Replace("\"", " ").Trim();
                                 }
                                 catch (Exception)
                                 {
@@ -162,6 +162,7 @@ namespace Gmaps.model
                     if (data.Length > 0)
                     {
                         string temp = data[4].ToString().Replace("\"", " ").Trim();
+
 #pragma warning disable CS0642 // Posible instrucción vacía errónea
                         if (temp.Equals(filter));
 #pragma warning restore CS0642 // Posible instrucción vacía errónea
@@ -171,7 +172,7 @@ namespace Gmaps.model
                             {
                                 try
                                 {
-                                    row[j] = data[j];
+                                    row[j] = data[j].ToString().Replace("\"", " ").Trim();
                                 }
                                 catch (Exception)
                                 {

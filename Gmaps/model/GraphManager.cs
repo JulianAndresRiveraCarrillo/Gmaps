@@ -33,6 +33,7 @@ namespace Gmaps.model
                     //This will ignore commas between double quotes in the CSV file
                     string[] dataLine = Regex.Split(lines[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
+
                     for (int j = 0; j < dataLine.Length; j++)
                     {
                         if (info.Count == 0)

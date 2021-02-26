@@ -205,7 +205,6 @@ namespace Gmaps
             this.label1.Size = new System.Drawing.Size(206, 13);
             this.label1.TabIndex = 16;
             this.label1.Text = "Escoje el país para conocer su ubicación.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnLimpiarMapa
             // 
