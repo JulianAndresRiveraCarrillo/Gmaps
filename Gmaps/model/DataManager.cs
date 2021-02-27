@@ -161,11 +161,7 @@ namespace Gmaps.model
 
                     if (data.Length > 0)
                     {
-                        string temp = data[4].ToString().Replace("\"", " ").Trim();
-
-#pragma warning disable CS0642 // Posible instrucción vacía errónea
-                        if (temp.Equals(filter));
-#pragma warning restore CS0642 // Posible instrucción vacía errónea
+                        if (data[4].ToString().Replace("\"", " ").Trim().Equals(filter))
                         {
                             DataRow row = table.NewRow();
                             for (int j = 0; j < data.Length; j++)
@@ -185,8 +181,49 @@ namespace Gmaps.model
                     }
                 }
             }
-        }
+        }/*
+            public void filterByWord(string path, string filter)//Se filtra en el atributo country.
+        {
+            table.Clear();
 
+            string[] text = System.IO.File.ReadAllLines(path);
+
+            if (text.Length > 1)
+            {
+
+                for (int i = 1; i < text.Length; i++)
+                {
+
+                    string[] data = Regex.Split(text[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+
+                    if (data.Length > 0)
+                    {
+                        string temp = data[4].ToString().Replace("\"", " ").Trim();
+
+                        
+                        /*
+                        if (temp.Equals(filter));
+
+                        {
+                            DataRow row = table.NewRow();
+                            for (int j = 0; j < data.Length; j++)
+                            {
+                                try
+                                {
+                                    row[j] = data[j].ToString().Replace("\"", " ").Trim();
+                                }
+                                catch (Exception)
+                                {
+                                    Console.WriteLine("ERROR!");
+                                }
+                            }
+
+                            table.Rows.Add(row);
+                        }
+                    }
+                }
+            }
+        }*/
        
     }
 }
