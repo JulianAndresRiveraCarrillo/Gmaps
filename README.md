@@ -46,7 +46,7 @@ For the development of this program, some problems presented were taken into acc
 After having analyzed the problem, a solution could be designed and I get the modeling using UML.
 
 [Class Diagram](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Documentation/C%23%20GMaps%20Class%20Diagram.pdf)
-[Object Diagram](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Documentation/Metodo_Ingenier%C3%ADa.pdf)
+[Object Diagram](https://github.com/JulianAndresRiveraCarrillo/Gmaps/blob/main/Documentation/ObjectDiagram.pdf)
 
 
 # SOFTWARE WORKING
